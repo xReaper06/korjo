@@ -7,6 +7,19 @@
     <title>Document</title>
  </head>
  <body>
-    
+    <h1>Bunal goy</h1>
+    <input type="text" name="" id="firstname" placeholder="Firstname">
+    <input type="text" name="" id="lastname" placeholder="Lastname">
+    <input type="button" value="submit" id="submit">
+
+    <H1 id="name"></H1>
+    <h1 id="last"></h1>
+    <input type="email" name="email" id="email">
  </body>
+ <script>
+    document.getElementById('submit').addEventListener('click',()=>{
+        document.getElementById('name').innerText=document.getElementById('Firstname').value
+        document.getElementById('last').innerText=document.getElementById('Lastname').value
+    })
+ </script>
  </html>
