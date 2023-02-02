@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+   <div class="container">
+      <h1>Bunal goy</h1>
+      <input type="text" name="" id="firstname" placeholder="Firstname">
+      <input type="text" name="" id="lastname" placeholder="Lastname">
+      <input type="email" name="email" id="email">
+      <input type="button" value="submit" id="submit">
+   </div>
+
+    <H1 id="sumbitted"></H1>
+ </body>
+ <script>
+   const fname = 'john'
+   const lname = 'astillero'
+   const name ='success'
+    document.getElementById('submit').addEventListener('click',()=>{
+        if(document.getElementById('firstname')==fname&& document.getElementById('lastname') ==lname && document.getElementById('email')=='helldeadpool456@gmail.com'){
+         document.getElementById('submitted').innerText=name
+        }else{
+         alert('incorrect')
+        }
+    })
+ </script>
+ </html>
